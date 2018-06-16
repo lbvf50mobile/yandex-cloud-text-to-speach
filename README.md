@@ -11,7 +11,7 @@
 - Greate **Yandex Cloud Key**
     - Enter https://developer.tech.yandex.ru
     - Get key for **SpeechKit Cloud**
-    - Save key into the `key` file `$ echo <key> > key`
+    - Save key into the `key` file `$ echo "<key>" > key`
 
 ## Usage
 - `$ yctts.sh "Hi" "hi.mp3"`

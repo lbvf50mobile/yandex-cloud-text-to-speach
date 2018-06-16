@@ -14,4 +14,4 @@
     - Save key into the `key` file `$ echo "<key>" > key`
 
 ## Usage
-- `$ yctts.sh "Hi" "hi.mp3"`
+- `$ ./yctts.sh "Hi" "hi.mp3"`

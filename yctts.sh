@@ -8,11 +8,12 @@ fi
 KEY=$(cat $key_file)
 TEXT="$1"
 FILE="$2"
-if [ -n "$TEXT" ]; then
+echo "$TEXT"
+if [ -z "$TEXT" ]; then
     echo "Need to call '$ yctts.sh <TEXT> <FILE>'"
     exit 1
 fi
-if [ -n "$FILE"]; then
+if [ -z "$FILE"]; then
     echo "There is no second argument <FILE>"
     exit 1
 fi

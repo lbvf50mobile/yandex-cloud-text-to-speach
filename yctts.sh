@@ -1,4 +1,7 @@
+#!/usr/bin/env bash
+
 # Yandex Cloud: 'Text to speach', tts.
+
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 key_file="$DIR""/key"
 if [ ! -f $key_file ]; then

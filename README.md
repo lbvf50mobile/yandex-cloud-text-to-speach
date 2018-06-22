@@ -25,5 +25,10 @@
 * `$ chmod ug+x /usr/bin/tts`
 
 ### Usage
-`$ echo "Hey, man. this is Yandex Speach cloud" | tts > hello.mp3`
-`$ echo 'Hi, my name is Jane.' | tts -s jane -e neutral > janeneutral.mp3`
+`$ echo "I like sound, and keys in string" | tts -s oksana -k <key> > oksana.mp3`
+`$ echo "I like sound, and keys." | tts -s jane -i ./key  > jane.mp3`
+
+- After instaltation it's possible to get keys from the shell variable `$YANDEX_CLOUD_TTS_KEY`
+    - `$ echo "Hey, man. this is Yandex Speach cloud" | tts > hello.mp3`
+    - `$ echo 'Hi, my name is Jane.' | tts -s jane -e neutral > janeneutral.mp3`
+- *error* echo "I like sound, and keys in string" | tts -k <key> > oksana.mp3

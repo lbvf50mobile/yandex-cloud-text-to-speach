@@ -20,7 +20,7 @@
 ## TTS
 
 ### Install
-* `$ echo "export YANDEX_CLOUD_TTS_KEY='<key>" >> ~/.bashrc'
+* `$ echo "export YANDEX_CLOUD_TTS_KEY='%yandex_cloud_key%>" >> ~/.bashrc`
 * `$ cp tts /usr/bin/tts`
 * `$ chmod ug+x /usr/bin/tts`
 

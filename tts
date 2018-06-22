@@ -6,7 +6,7 @@ g=`tput setaf 2`
 rs=`tput sgr0`
 
 function help(){
-    echo "${g}Usage${rs}: "
+    echo "${g}Usage:${rs}: "
     echo "echo 'Text' | tts [options] > output.mp3"
     echo "${g}Options:${rs}"
     echo '[-s jane|oksana|alyss|omazh|zahar|ermil]'

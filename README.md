@@ -26,3 +26,4 @@
 
 ### Usage
 `$ echo "Hey, man. this is Yandex Speach cloud" | tts > hello.mp3`
+`$ echo 'Hi, my name is Jane.' | tts -s jane -e neutral > janeneutral.mp3`

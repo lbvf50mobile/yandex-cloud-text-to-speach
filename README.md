@@ -7,6 +7,12 @@
 - [TTS](#tts)
 - [BUGS](#bugs)
 
+## Acknowledgment
+
+Here I want to say kind words for `@n0deven`, this project started because of his hint about [anki card system](https://apps.ankiweb.net/). And also I appriciate for his help in late night debugging. When after working day everybody are so tired. 
+
+And thanks for `@cryptstal` too. 
+
 ## Instalation
 - Clone repo `$ git clone https://github.com/lbvf50mobile/yandex-cloud-text-to-speach.git`
     - enter repo directory `$ cd yandex-cloud-text-to-speach`

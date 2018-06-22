@@ -2,13 +2,8 @@
 
 # Yandex Cloud: 'Text to speach', tts.
 
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-key_file="$DIR""/key"
-if [ ! -f $key_file ]; then
-    echo "There is no key file."
-    exit 1
-fi
-KEY=$(cat $key_file)
+
+KEY=$YANDEX_CLOUD_TTS_KEY
 TEXT=$( cat "${1:-/dev/stdin}")
 FILE="/dev/stdout"
 

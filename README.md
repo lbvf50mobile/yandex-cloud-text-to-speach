@@ -20,9 +20,9 @@
 ## TTS
 
 ### Install
-`echo "export YANDEX_CLOUD_TTS_KEY='<key>" >> ~/.bashrc'
-`cp tts /usr/bin/tts`
-`chmod ug+x /usr/bin/tts`
+* `$ echo "export YANDEX_CLOUD_TTS_KEY='<key>" >> ~/.bashrc'
+* `$ cp tts /usr/bin/tts`
+* `$ chmod ug+x /usr/bin/tts`
 
 ### Usage
 `$ echo "Hey, man. this is Yandex Speach cloud" | tts > hello.mp3`

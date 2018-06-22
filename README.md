@@ -4,6 +4,7 @@
 - [Instalation](#instalation)
 - [Usage](#usage)
 - [TTS](#tts)
+- [BUGS](#bugs)
 
 ## Instalation
 - Clone repo `$ git clone https://github.com/lbvf50mobile/yandex-cloud-text-to-speach.git`
@@ -31,4 +32,7 @@
 - After instaltation it's possible to get keys from the shell variable `$YANDEX_CLOUD_TTS_KEY`
     - `$ echo "Hey, man. this is Yandex Speach cloud" | tts > hello.mp3`
     - `$ echo 'Hi, my name is Jane.' | tts -s jane -e neutral > janeneutral.mp3`
-- *error* echo "I like sound, and keys in string" | tts -k <key> > oksana.mp3
+
+## BUGS
+- **error** `$ echo "I like sound, and keys in string" | tts -k <key> > error.mp3`
+- **error** `$ echo "I like sound, and keys in string" | tts -i <file> > error.mp3`

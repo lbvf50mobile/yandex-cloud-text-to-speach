@@ -1,10 +1,16 @@
 #!/usr/bin/env bash
 
 # Yandex Cloud: 'Text to speach', tts.
+r=`tput setaf 1`
+g=`tput setaf 2`
+rs=`tput sgr0`
 
 function help(){
-    echo "this is help"
+    echo "${g}Usage${rs}: "
+    echo "echo 'Text' | tts [options] > output.mp3"
+    echo "${g}Options:${rs}"
     echo '[-s jane|oksana|alyss|omazh|zahar|ermil]'
+    echo '[-e good|neutral|evil]'
 
 }
 
@@ -22,6 +28,10 @@ while (( "$#" )); do
       ;;
       -s|--speaker)
         SPEAKER="speaker=$2"
+        shift 2
+      ;;
+       -e|--emotion)
+        EMOTION="emotion=$2"
         shift 2
       ;;
     --) # end argument parsing

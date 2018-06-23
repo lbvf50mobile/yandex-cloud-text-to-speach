@@ -1,6 +1,6 @@
 # BASH Script for text to speach convertion by Yandex Cloud.
 
-[Yandex Speach Kit Documentation](https://tech.yandex.ru/speechkit/cloud/doc/guide/common/speechkit-common-tts-http-request-docpage/)   
+[Yandex Speech Kit Documentation](https://tech.yandex.ru/speechkit/cloud/doc/guide/common/speechkit-common-tts-http-request-docpage/)   
 
 ## Table of contents
 - [Acknowledgment](#acknowledgment)

@@ -1,18 +1,3 @@
-echo 'Hi, my name is jane. In darkened woods the smell of fallen showers all around. Keep in time with may day flowers make love to the ground' | tts -s jane -e good > janegood.mp3
-echo 'Hi, my name is jane. In darkened woods the smell of fallen showers all around. Keep in time with may day flowers make love to the ground' | tts -s jane -e neutral > janeneutral.mp3
-echo 'Hi, my name is jane. In darkened woods the smell of fallen showers all around. Keep in time with may day flowers make love to the ground' | tts -s jane -e evil > janeevil.mp3
-echo 'Hi, my name is oksana. In darkened woods the smell of fallen showers all around. Keep in time with may day flowers make love to the ground' | tts -s oksana -e good > oksanagood.mp3
-echo 'Hi, my name is oksana. In darkened woods the smell of fallen showers all around. Keep in time with may day flowers make love to the ground' | tts -s oksana -e neutral > oksananeutral.mp3
-echo 'Hi, my name is oksana. In darkened woods the smell of fallen showers all around. Keep in time with may day flowers make love to the ground' | tts -s oksana -e evil > oksanaevil.mp3
-echo 'Hi, my name is alyss. In darkened woods the smell of fallen showers all around. Keep in time with may day flowers make love to the ground' | tts -s alyss -e good > alyssgood.mp3
-echo 'Hi, my name is alyss. In darkened woods the smell of fallen showers all around. Keep in time with may day flowers make love to the ground' | tts -s alyss -e neutral > alyssneutral.mp3
-echo 'Hi, my name is alyss. In darkened woods the smell of fallen showers all around. Keep in time with may day flowers make love to the ground' | tts -s alyss -e evil > alyssevil.mp3
-echo 'Hi, my name is omazh. In darkened woods the smell of fallen showers all around. Keep in time with may day flowers make love to the ground' | tts -s omazh -e good > omazhgood.mp3
-echo 'Hi, my name is omazh. In darkened woods the smell of fallen showers all around. Keep in time with may day flowers make love to the ground' | tts -s omazh -e neutral > omazhneutral.mp3
-echo 'Hi, my name is omazh. In darkened woods the smell of fallen showers all around. Keep in time with may day flowers make love to the ground' | tts -s omazh -e evil > omazhevil.mp3
-echo 'Hi, my name is zahar. In darkened woods the smell of fallen showers all around. Keep in time with may day flowers make love to the ground' | tts -s zahar -e good > zahargood.mp3
-echo 'Hi, my name is zahar. In darkened woods the smell of fallen showers all around. Keep in time with may day flowers make love to the ground' | tts -s zahar -e neutral > zaharneutral.mp3
-echo 'Hi, my name is zahar. In darkened woods the smell of fallen showers all around. Keep in time with may day flowers make love to the ground' | tts -s zahar -e evil > zaharevil.mp3
-echo 'Hi, my name is ermil. In darkened woods the smell of fallen showers all around. Keep in time with may day flowers make love to the ground' | tts -s ermil -e good > ermilgood.mp3
-echo 'Hi, my name is ermil. In darkened woods the smell of fallen showers all around. Keep in time with may day flowers make love to the ground' | tts -s ermil -e neutral > ermilneutral.mp3
-echo 'Hi, my name is ermil. In darkened woods the smell of fallen showers all around. Keep in time with may day flowers make love to the ground' | tts -s ermil -e evil > ermilevil.mp3
+echo 'Hi, my name is jane. In darkened woods the smell of fallen showers all around. Keep in time with may day flowers make love to the ground' | tts -s jane -e good -S 1.0 > janegood1.0.mp3
+echo 'Hi, my name is jane. In darkened woods the smell of fallen showers all around. Keep in time with may day flowers make love to the ground' | tts -s jane -e good -S 2.0 > janegood2.0.mp3
+echo 'Hi, my name is jane. In darkened woods the smell of fallen showers all around. Keep in time with may day flowers make love to the ground' | tts -s jane -e good -S 3.0 > janegood3.0.mp3

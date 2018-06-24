@@ -59,7 +59,6 @@ while (( "$#" )); do
       ;;
     --) # end argument parsing
       shift
-      echo "I'm here"
       break
       ;;
     -*|--*=) # unsupported flags
@@ -75,13 +74,11 @@ done
 # Select use Params or Stdin/Stdout for input/ouput.
 if [ -n "$1" ]; then
   TEXT="$1"
-  echo $TEXT
 else
   TEXT=$(cat /dev/stdin)
 fi
 if [ -n "$2" ]; then
   FILE="$2"
-  echo $FILE
 else
   FILE="/dev/stdout" 
 fi

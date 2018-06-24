@@ -7,8 +7,10 @@ g=`tput setaf 2`
 rs=`tput sgr0`
 
 function help(){
-    echo "${g}Usage:${rs}: "
+    echo "${g}Usage:${rs}"
+    echo "Piplene: "
     echo "echo 'Text' | tts [options] > output.mp3"
+    echo "Args: "
     echo "tts [options] -- <text_to_read> <output_file>"
     echo "${g}Options:${rs}"
     echo '[-s jane|oksana|alyss|omazh|zahar|ermil]'
@@ -55,33 +57,31 @@ while (( "$#" )); do
       ;;
     --) # end argument parsing
       shift
+      echo "I'm here"
       break
       ;;
     -*|--*=) # unsupported flags
       echo "Error: Unsupported flag $1" >&2
       exit 1
       ;;
-    *) # preserve positional arguments
-      PARAMS="$PARAMS $1"
-      shift
-      ;;
+
   esac
 done
-# set positional arguments in their proper place
-eval set -- "$PARAMS"
+
+
 
 # Select use Params or Stdin/Stdout for input/ouput.
 if [ -n "$1" ]; then
   TEXT="$1"
+  echo $TEXT
 else
   TEXT=$(cat /dev/stdin)
 fi
-echo $TEXT
 if [ -n "$2" ]; then
   FILE="$2"
+  echo $FILE
 else
   FILE="/dev/stdout" 
 fi
-echo $FILE
 
 curl "https://tts.voicetech.yandex.net/generate?format=mp3&lang=en-US&$SPEAKER&$SPEED&$EMOTION&key=$KEY" -G --data-urlencode "text=$TEXT" > "$FILE"

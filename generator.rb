@@ -7,7 +7,7 @@ def write_lines(file)
     speakers.split("|").product(emotions.split("|")).to_a.product(speeds.split("|")) do |(name, emotion), speed|
         song ="'Hi, my name is #{name}. In darkened woods the smell of fallen showers all around. Keep in time with may day flowers make love to the ground'" 
         file.puts "echo #{song} | tts -s #{name} -e #{emotion} -S #{speed} > #{name}#{emotion}#{speed}_std.mp3"
-        file.puts "tts -s #{name} -e #{emotion} -S #{speed} #{song}  #{name}#{emotion}#{speed}_args.mp3"
+        file.puts "tts -s #{name} -e #{emotion} -S #{speed} -- #{song}  #{name}#{emotion}#{speed}_args.mp3"
     end
 end
 

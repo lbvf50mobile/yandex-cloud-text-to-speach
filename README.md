@@ -30,6 +30,8 @@ And thanks for `@cryptstal` too.
 ## TTS
 `$ echo "I like sound, and keys in file" | ./tts -i <file> > likefile.mp3`  
 `$ echo "I like sound, and keys in argument" | ./tts -k <key> > likekey.mp3`  
+`$ ./tts -i <file> "I like sound, and keys in file"  likefile.mp3`  
+`$ "I like sound, and keys in argument" ./tts -k <key> "I like sound, and keys in argument" likekey.mp3`  
 
 ### Install
 * `$ echo "export YANDEX_CLOUD_TTS_KEY='%yandex_cloud_key%>" >> ~/.bashrc`  

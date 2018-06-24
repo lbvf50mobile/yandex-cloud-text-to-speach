@@ -7,6 +7,7 @@
 - [Instalation](#instalation)
 - [Usage](#usage)
 - [TTS](#tts)
+- [TODO](#todo)
 - [BUGS](#bugs)
 
 ## Acknowledgment
@@ -47,5 +48,9 @@ And thanks for `@cryptstal` too.
 - After instaltation it's possible to get keys from the shell variable `$YANDEX_CLOUD_TTS_KEY`  
     - `$ echo "Hey, man. this is Yandex Speach cloud" | tts > hello.mp3`  
     - `$ echo 'Hi, my name is Jane.' | tts -s jane -e neutral > janeneutral.mp3`  
+
+## TODO
+- Revrite `positional agrument parsing` to eliminate `--` after keys.
+- Improve documentation.
 
 ## BUGS

@@ -9,6 +9,7 @@ rs=`tput sgr0`
 function help(){
     echo "${g}Usage:${rs}: "
     echo "echo 'Text' | tts [options] > output.mp3"
+    echo "tts [options] -- <text_to_read> <output_file>"
     echo "${g}Options:${rs}"
     echo '[-s jane|oksana|alyss|omazh|zahar|ermil]'
     echo '[-e good|neutral|evil]'
@@ -20,6 +21,9 @@ function help(){
 SPEAKER='speaker=zahar'
 EMOTION='emotion=good'
 SPEED='speed=1.0'
+KEY=$YANDEX_CLOUD_TTS_KEY
+FILE=
+TEXT=
 
 # https://medium.com/@Drew_Stokes/bash-argument-parsing-54f3b81a6a8f
 PARAMS=""
@@ -66,8 +70,18 @@ done
 # set positional arguments in their proper place
 eval set -- "$PARAMS"
 
-KEY=$YANDEX_CLOUD_TTS_KEY
-TEXT=$(cat /dev/stdin)
-FILE="/dev/stdout"
+# Select use Params or Stdin/Stdout for input/ouput.
+if [ -n "$1" ]; then
+  TEXT="$1"
+else
+  TEXT=$(cat /dev/stdin)
+fi
+echo $TEXT
+if [ -n "$2" ]; then
+  FILE="$2"
+else
+  FILE="/dev/stdout" 
+fi
+echo $FILE
 
 curl "https://tts.voicetech.yandex.net/generate?format=mp3&lang=en-US&$SPEAKER&$SPEED&$EMOTION&key=$KEY" -G --data-urlencode "text=$TEXT" > "$FILE"

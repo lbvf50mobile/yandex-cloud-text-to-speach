@@ -27,7 +27,9 @@ KEY=$YANDEX_CLOUD_TTS_KEY
 FILE=
 TEXT=
 
-# https://medium.com/@Drew_Stokes/bash-argument-parsing-54f3b81a6a8f
+# https://medium.com/@Drew_Stokes/bash-argument-parsing-54f3b81a6a8f 
+# Code from this source has problem when aprsing quotes strings in 
+# positional arguments.
 PARAMS=""
 while (( "$#" )); do
   case "$1" in
